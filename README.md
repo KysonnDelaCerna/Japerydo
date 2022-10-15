@@ -2,7 +2,7 @@
 
 Questions are written into `questions.json` in the format:
 
-`
+```
 [
     {
         "category": "Category 1",
@@ -31,4 +31,4 @@ Questions are written into `questions.json` in the format:
     },
     ...
 ]
-`
+```
