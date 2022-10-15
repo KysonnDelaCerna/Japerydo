@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Japerydo</title>
+</head>
+<body>
+    <div id="container" class="p-16 bg-slate-900 flex justify-center items-center relative" style="min-height: 100vh; min-width: 100vw;">
+        <div id="board">
+            <div id="categories"></div>
+            <div id="questions"></div>
+        </div>
+        <div id="prompt" class="hidden text-center text-white font-bold text-5xl break-word p-16 flex flex-col justify-center items-center"></div>
+        <div id="hint" class="hidden text-center text-white font-bold text-5xl break-word flex flex-col justify-center space-y-4"></div>
+        <div id="answer" class="hidden text-center text-white font-bold text-5xl break-word"></div>
+        <div id="buttons" class="hidden flex flex-row absolute space-x-4 bottom-2 left-2">
+            <button id="backButton" onclick="back()" class="text-white text-2xl font-bold px-6 py-4 bg-blue-900 rounded-xl border-black border-4">Back</button>
+            <button id="choicesButton" onclick="choices()" class="text-white text-2xl font-bold px-6 py-4 bg-blue-900 rounded-xl border-black border-4">Choices</button>
+            <button id="answerButton" onclick="answer()" class="text-white text-2xl font-bold px-6 py-4 bg-blue-900 rounded-xl border-black border-4">Answer</button>
+        </div>
+    </div>
+
+    <script src="/game.js"></script>
+</body>
+</html>
